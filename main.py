@@ -42,7 +42,7 @@ while game_continue:
         Scoreboard.gameOver()
 
     for segment in snake.segments[1::]:
-        if snake.head.distance(segment) < 13:
+        if snake.head.distance(segment) < 10:
             game_continue = False
             Scoreboard.gameOver()
             break
